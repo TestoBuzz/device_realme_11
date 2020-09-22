@@ -228,6 +228,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IAppConnector</name>
             <instance>default</instance>
         </interface>
+<<<<<<< HEAD:manifest.xml
         <interface>
             <name>IGPAppConnector</name>
             <instance>default</instance>
@@ -242,6 +243,23 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <name>IKeymasterDevice</name>
            <instance>default</instance>
        </interface>
+=======
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+>>>>>>> d9e0b43... op3: Build new aidl qti power HAL:configs/manifest.xml
     </hal>
     <!-- gatekeeper -->
     <hal format="hidl">
@@ -726,6 +744,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+<<<<<<< HEAD:manifest.xml
         <name>vendor.oppo.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -736,6 +755,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.data.iwlan</name>
+=======
+        <name>vendor.lineage.touch</name>
+>>>>>>> d9e0b43... op3: Build new aidl qti power HAL:configs/manifest.xml
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
