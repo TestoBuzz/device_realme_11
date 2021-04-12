@@ -4,8 +4,8 @@
 # SPDX-License-Identifer: Apache-2.0
 #
 
-# Inherit some common ShapeShiftOS stuff.
-$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+# Inherit some common pex stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -15,14 +15,13 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := RMX1971
-PRODUCT_NAME := ssos_RMX1971
+PRODUCT_NAME := aosp_RMX1971
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme 5 Pro
 PRODUCT_MANUFACTURER := Realme
 
 # ShapeShift Official Stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
-SSOS_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
@@ -34,10 +33,6 @@ BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/relea
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1971" \
     TARGET_DEVICE="RMX1971"
-
-# ShapeShiftOS specific properties
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.ssos.cpu=SDM712
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
